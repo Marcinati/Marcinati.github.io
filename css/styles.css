@@ -1,0 +1,43 @@
+﻿body {
+    background-color: whitesmoke;
+    font-family: Bahnschrift;
+    font-size: large;
+}
+
+#menu {
+    background-color: dimgray;
+    padding: 20px 5px;
+}
+
+#menu_active {
+    background-color: black;
+    cursor: crosshair;
+}
+
+a {
+    border-right: inset;
+    color: rgb(255 255 255);
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: darkgray;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+td {
+    height: 400px;
+    padding: 5px 5px;
+    text-align: left;
+    vertical-align: text-top;
+    width: 350px;
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    font-size: smaller;
+    padding: 5px;
+}
