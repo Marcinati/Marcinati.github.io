@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,16 +12,25 @@
         <a href="projects.html">Projects</a>
         <a id="menu_active">Contact</a>
     </div>
-    <table>
-        <tr>
-            <td>
-                left content
-            </td>
-            <td>
-                right content
-            </td>
-        </tr>
-    </table>
-    <footer><blockquote>"So call me, maybe?"<br> Some Singer</blockquote></footer>
+    
+    <form class="form" id="contactForm" method="post" action="#">
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" name="name" required pattern=.{3,} id="name" data-error-text="Please, type your name (min. 3 characters)">
+        </div>
+        <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required id="email" data-error-text="Type correct e-mail addres">
+        </div>
+        <div class="form-row">
+            <label for="message">Message</label>
+            <textarea name="message" required data-error-text="Please, write your message" id="message"></textarea>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="submit-button">Send</button>
+        </div>
+    </form>
+
+    <footer><blockquote>"So call me, maybe?"<br /> Some Singer</blockquote></footer>
 </body>
 </html>
